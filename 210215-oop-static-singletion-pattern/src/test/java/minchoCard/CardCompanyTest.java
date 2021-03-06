@@ -1,3 +1,9 @@
+/*
+*   예제문이 주어진 상태
+*   파란 글자가 static 때문인지 튀어나왔다
+*   https://stackoverflow.com/questions/21177495/renaming-a-project-in-intellij-idea/45204719
+ */
+
 package minchoCard;
 
 public class CardCompanyTest {
