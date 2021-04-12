@@ -1,0 +1,6 @@
+inheritance/Customer.java
+ inheritance.Customer
+inheritance/VIPCustomer.java
+ inheritance.VIPCustomer
+inheritance/CustomerTest.java
+ inheritance.CustomerTest
