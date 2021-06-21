@@ -1,4 +1,4 @@
-package inheritance;
+package polymophism;
 
 public class Customer {
     protected int customerID;

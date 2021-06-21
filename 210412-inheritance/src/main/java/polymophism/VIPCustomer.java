@@ -1,6 +1,6 @@
-package inheritance;
+package polymophism;
 
-public class VIPCustomer extends Customer{
+public class VIPCustomer extends Customer {
 /* inheritance
  private int customerID;
  private String customerName;
