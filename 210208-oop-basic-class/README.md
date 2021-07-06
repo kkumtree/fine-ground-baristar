@@ -122,3 +122,31 @@
 - ListNode를 사용해서 한번.
 
 ## 과제 풀이
+> 과제 0. JUnit 5 학습하세요.
+
+### 0-1. 개념
+- JUnit: 인기있는 '단위 테스트 프레임워크'
+- 특히, "JUnit 5"는 Java 8 이상의 새로운 기능을 지원하고, 다양한 테스트를 가능토록 했다고 함.  
+
+### 0-2. 설정 방법(IntelliJ)
+- JUnit 5.x 설정: pom.xml에 아래의 종속성을 추가해야함. (Java 8이 필요함)
+	```xml
+	<dependency>
+		<groupId>org.junit.jupiter</groupId>
+		<artifactId>junit-jupiter-engine</artifactId>
+		<version>5.1.0</version>
+		<scope>test</scope>
+	</dependency>
+	```
+- IntelliJ는 기본적으로 JUnit5를 지원하는데, 따로 테스트 환경을 구성해야 한다. [단축키: `Ctrl-Shift-T` ]  
+- [**여기**](https://log-laboratory.tistory.com/203)에 따르면 `test`폴더를 따로 마련하고, 여기서 새로운 테스트를 생성한다고 한다.  
+- 일단 소스의 루트 경로(`main` 혹은 `src` 내부 등)에 폴더를 생성하고, 여기에 `Test Source Root`로 Mark.  
+	(어차피 다음 단계에서 폴더 생성을 물어본다)
+- 그다음에 테스트 대상 클래스를 선택하고 단축키 또는 (우클릭) 'Go To > Test' 선택 [파일 X]  
+- 테스트 코드 작성 후, @Test 가 적용된 클래스를 우클릭하여 'Run' 진행
+- 이때 나타나는 오류 2가지  
+ (1) Test events were not received  
+	'setting > ... > Gradle' 에서 Run test using에 'IntelliJ"를 선택한다.  
+ (2) Non-static method 'calcPrice(int)' cannot be referenced from a static context  
+	기본이 없어서 생기는 오류인데, 객체화되어 있지 않아(부존재), new(생성)를 통해 객체화(static)한 후 사용해야 non-static 메소드를 사용할 할 수 있다.  
+> 과제 1. live-study 대시 보드를 만드는 코드를 작성하세요.  
