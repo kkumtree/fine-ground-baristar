@@ -1,6 +1,12 @@
-StringTest.java
- StringTest
 StringBuilderTest.java
  StringBuilderTest
+StringTest.java
+ StringTest
 TestBlockTest.java
  TestBlockTest
+classClassStudy/StringTest.java
+ classClassStudy.StringTest
+classClassStudy/PersonNewInstanceTest.java
+ classClassStudy.PersonNewInstanceTest
+classClassStudy/ClassTest.java
+ classClassStudy.ClassTest
