@@ -11,6 +11,10 @@ public class PersonNewInstanceTest {
         this.age = age;
     }
 
+    public PersonNewInstanceTest(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
